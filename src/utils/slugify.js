@@ -1,11 +1,10 @@
-const slugify = require('slugify');
+const slugify = (text) => {
+  return text
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+};
 
-function createSlug(text) {
-  return slugify(text, {
-    lower: true,
-    strict: true,
-    remove: /[*+~.()\"'!:@]/g
-  });
-}
-
-module.exports = createSlug;
+module.exports = slugify;
