@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خواندن فصل - Melanga</title>
+    <link rel="stylesheet" href="/css/reader.css">
+</head>
+<body>
+    <div class="reader-container">
+        <header class="reader-header">
+            <div class="reader-info">
+                <h2 id="mangaTitle"></h2>
+                <p id="chapterInfo"></p>
+            </div>
+            <button onclick="goHome()" class="btn-back">بازگشت</button>
+        </header>
+
+        <div class="reader-controls">
+            <button id="prevBtn" onclick="prevChapter()" class="btn-nav">← فصل قبلی</button>
+            <div class="chapter-selector">
+                <select id="chapterSelect" onchange="selectChapter()"></select>
+            </div>
+            <button id="nextBtn" onclick="nextChapter()" class="btn-nav">فصل بعدی →</button>
+        </div>
+
+        <div id="pagesContainer" class="pages-container"></div>
+
+        <div class="reader-controls bottom">
+            <button id="prevBtn2" onclick="prevChapter()" class="btn-nav">← فصل قبلی</button>
+            <button id="nextBtn2" onclick="nextChapter()" class="btn-nav">فصل بعدی →</button>
+        </div>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/reader.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melanga - مانگا و مانهوا</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">Melanga</div>
+                <ul class="nav-menu">
+                    <li><a href="/">خانه</a></li>
+                    <li><a href="/search">جستجو</a></li>
+                    <li><a href="/news.html">اخبار</a></li>
+                    <li id="authMenu"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>بهترین سایت مانگا و مانهوا فارسی</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="جستجو..." />
+                <button onclick="searchManga()">جستجو</button>
+            </div>
+        </section>
+
+        <section class="announcements" id="announcementsSection"></section>
+
+        <section class="latest-manga">
+            <h2>آخرین مانگاها</h2>
+            <div id="mangaList" class="manga-grid"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p id="footerText"></p>
+    </footer>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت نام - Melanga</title>
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <h1>ثبت نام</h1>
+            <form id="registerForm">
+                <input type="text" id="username" placeholder="نام کاربری" required />
+                <input type="email" id="email" placeholder="ایمیل" required />
+                <input type="password" id="password" placeholder="رمز عبور" required />
+                <input type="password" id="confirmPassword" placeholder="تکرار رمز عبور" required />
+                <button type="submit">ثبت نام</button>
+            </form>
+            <p>حساب دارید؟ <a href="/login.html">وارد شوید</a></p>
+        </div>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/register.js"></script>
+</body>
+</html>
